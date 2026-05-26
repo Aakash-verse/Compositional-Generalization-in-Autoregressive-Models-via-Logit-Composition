@@ -1,6 +1,6 @@
-# Supplementary Code
+# Supplementary Code for Compositional Generalization in Autoregressive Models via Logit Composition
 
-This anonymous supplement contains the notebook used for the synthetic letter-replacement experiment and the logit-composition LLM evaluations.
+This repository contains the notebook used for the synthetic letter-replacement experiment and the logit-composition LLM evaluations.
 
 ## Environment
 
@@ -38,8 +38,8 @@ The merged decoder uses greedy decoding with `MAX_NEW = 512`, `SAMPLE_MERGED = F
 
 | Benchmark | Base | Coding expert | Math expert | Logit composition |
 | --- | ---: | ---: | ---: | ---: |
-| GSM8K | 3.2 | - | 50.2 | 41.2 |
-| MATH | 16.3 | - | 25.5 | 24.2 |
+| GSM8K | 3.2 | 3.2 | 50.2 | 41.2 |
+| MATH | 16.3 | 16.7 | 25.5 | 24.2 |
 | HumanEval+ | 3.7 | 24.4 | 13.4 | 30.5 |
 | MBPP+ | 33.9 | 38.1 | 32.8 | 39.4 |
 
